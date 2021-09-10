@@ -45,6 +45,14 @@
 # end
 # p new_words
 
+# Using .map shortcut
+# words = ["hello", "goodbye"]
+# new_words = words.map do |word|
+#   word.upcase
+# end
+# p new_words
+
+
 # #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 # #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 # # Using a while loop
@@ -64,6 +72,13 @@
 #   names << hash[:name]
 # end
 
+# p names
+
+# Using a .map shortcut
+# people = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
+# names = people.map do |name|
+#   name[:name]
+# end
 # p names
 
 
@@ -87,6 +102,12 @@
 # end
 # p new_numbers
 
+# Using a .map shortcut
+# numbers = [1, 2, 3]
+# new_numbers = numbers.map do |number|
+#   number + 7
+# end
+# p new_numbers
 
 # #  5. Start with an array of strings and create a new array with each string's length.
 # #     For example, ["hello", "goodbye"] becomes [5, 7].
