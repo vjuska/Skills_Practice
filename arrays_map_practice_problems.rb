@@ -188,6 +188,13 @@
 # end
 # p new_numbers
 
+# Using a .map shortcut
+# numbers = [1, 2, 3]
+# new_numbers = numbers.map do |number|
+#   number / 2.0
+# end
+# p new_numbers
+
 # #  8. Start with an array of strings and create a new array with each string's first letter only.
 # #     For example, ["hello", "goodbye"] becomes ["h", "g"].
 # # Using a while loop
@@ -206,6 +213,14 @@
 # words.each do |word|
 #   first_letters << word[0]
 # end
+# p first_letters
+
+# Using a .map shortcut
+# words = ["hello", "goodbye"]
+# first_letters = words.map do |word|
+#   word[0]
+# end
+
 # p first_letters
 
 # # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
@@ -228,6 +243,14 @@
 # end
 # p age_doubled
 
+# Using a .map shortcut
+# people = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# ages = people.map do |age|
+#   age[:age] * 2
+# end
+
+# p ages
+
 # # 10. Start with an array of numbers and create a new array with each number converted into a string.
 # #     For example, [1, 2, 3] becomes ["1", "2", "3"].
 # # Using a while loop
@@ -246,4 +269,12 @@
 # numbers.each do |number|
 #   strings << number.to_s
 # end
+# p strings
+
+# Using .map shortcut
+# numbers = [1, 2, 3]
+# strings = numbers.map do |number|
+#   number.to_s
+# end
+
 # p strings
